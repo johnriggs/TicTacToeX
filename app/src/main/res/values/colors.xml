@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //Theme Colors
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black">#FF000000</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="blue_cool">#FF00CCFF</color>
+    <color name="blue_cool_dark">#FF00A3CC</color>
+    <color name="blue_cool_light">#FF33D6FF</color>
+    <color name="blue_light">#FF3333FF</color>
+    <color name="blue_dark">#FF0000CC</color>
+    <color name="blue_very_dark">#000080</color>
+    <color name="blue_very_light">#FF8080FF</color>
+    <color name="green">#FF40BF40</color>
+    <color name="green_dark">#FF339933</color>
+    <color name="green_light">#FF66CC66</color>
+    <color name="grey_dark">#FF333333</color>
+    <color name="grey_light">#FFCCCCCC</color>
+    <color name="grey_medium">#FF888888</color>
+    <color name="grey_medium_dark">#FF656565</color>
+    <color name="grey_medium_light">#FF9A9A9A</color>
+    <color name="grey_very_dark">#FF1A1A1A</color>
+    <color name="orange">#FFFF9900</color>
+    <color name="orange_dark">#FFCC7A00</color>
+    <color name="orange_light">#FFFFAD33</color>
+    <color name="purple">#FF9000FF</color>
+    <color name="purple_dark">#FF7A00CC</color>
+    <color name="purple_light">#FFAD33FF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="red_dark">#FFCC0000</color>
+    <color name="red_light">#FFFF3333</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFEAF300</color>
+</resources>

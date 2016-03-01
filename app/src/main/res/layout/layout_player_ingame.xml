@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/player_pointer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/pointer_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/whitepointer"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/player_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@id/player_pointer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_8" >
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size_24"
+            android:shadowColor="@color/grey_dark"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="2"
+            android:textStyle="bold|italic"
+            android:text="@string/player"/>
+        <View
+            android:id="@+id/underline"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_below="@id/name"
+            android:background="@color/grey_dark"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/player_wins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@id/player_name"
+        android:layout_marginTop="@dimen/margin_8" >
+        <TextView
+            android:id="@+id/wins_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size_24"
+            android:textStyle="bold|italic"
+            android:text="@string/wins"/>
+        <TextView
+            android:id="@+id/wins_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/wins_title"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size_24"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/player_tokens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@id/player_wins"
+        android:layout_marginTop="@dimen/margin_8" >
+        <TextView
+            android:id="@+id/tokens_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:gravity="center"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size_24"
+            android:textStyle="bold|italic"
+            android:text="@string/tokens"/>
+        <TextView
+            android:id="@+id/tokens_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tokens_title"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_24"
+            android:textStyle="bold|italic"
+            android:textColor="@color/grey_dark"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/swaps_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@id/player_tokens"
+        android:layout_marginTop="@dimen/margin_8">
+        <TextView
+            android:id="@+id/swaps_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:gravity="center"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size_24"
+            android:textStyle="bold|italic"
+            android:text="@string/swaps"/>
+        <TextView
+            android:id="@+id/swaps_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/swaps_title"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:gravity="center"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size_24"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+</LinearLayout>
